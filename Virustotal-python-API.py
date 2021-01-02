@@ -24,5 +24,5 @@ for i in Urls:
         with open('Virustotal Malicious result.txt', 'a')  as malicious:
             malicious.write(i) and malicious.write("\t Malicious\n")
 
-    time.sleep(20)
+    time.sleep(15)
 
