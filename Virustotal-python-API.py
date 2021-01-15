@@ -36,6 +36,6 @@ for i in Urls:
                 clean.write(i) and clean.write("\tNOT malicious\n")
         else:
             with open('Virustotal Malicious result.txt', 'a')  as malicious:
-                malicious.write(i) and malicious.write("\t Malicious\n")
+                malicious.write(i) and malicious.write("\t Malicious") and malicious.write("\t this Domains Detectd by   "+ str(json_response['positives']) + "  Solutions\n")
 
     time.sleep(15)
