@@ -15,9 +15,6 @@ url = 'https://www.virustotal.com/vtapi/v2/url/report'
 
 parameters = {'apikey': API_key, 'resource': Urls}
 
-response= requests.get(url=url, params=parameters)
-json_response= json.loads(response.text)
-
 for i in Urls:
     parameters = {'apikey': API_key, 'resource': i}
 
